@@ -26,9 +26,6 @@ public class Village {
         return amenities;
     }
 
-    public int getAmenityCount() {
-        return amenities.size();
-    }
 
     public void displayInfo() {
         System.out.println("Amenities of the village:");

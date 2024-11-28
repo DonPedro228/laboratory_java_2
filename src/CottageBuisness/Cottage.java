@@ -21,7 +21,7 @@ public class Cottage {
     public Cottage(String type, List<Amenity> amenities, int guests) {
         this.type = type;
         this.amenities = amenities != null ? new ArrayList<>(amenities) : new ArrayList<>();
-        this.price = type.equals("Standard") ? 100 : type.equals("Lux") ? 250 : 0; // Default pricing logic
+        this.price = type.equals("Standard") ? 100 : type.equals("Lux") ? 250 : 0;
         this.guests = guests;
     }
 

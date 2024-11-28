@@ -1,5 +1,7 @@
 package CottageBuisness;
-import java.util.List;
+
+
+import java.time.Month;
 
 public class Finance {
     private double totalIncome;
@@ -14,7 +16,8 @@ public class Finance {
         double pricePerNight = cottage.getPrice();
         double discountPrice = pricePerNight;
 
-        if (month == 11 || month == 3) {
+
+        if (month == Month.NOVEMBER.getValue() || month == 3) {
             discountPrice *= 0.8;
         }
 
